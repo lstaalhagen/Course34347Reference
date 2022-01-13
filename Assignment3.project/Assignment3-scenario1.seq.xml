@@ -21,10 +21,10 @@
 				<attribute name="checkpoint keep_last_N" type="integer" value="-1"/>
 			</simset-attributes>
 			<promoted-attribute-list>
-				<promoted-attribute name="Logical Network.*.Src.High priority fraction" value="0.5"/>
-				<promoted-attribute name="Logical Network.node_0.Src.Packet rate" value="0.33333"/>
-				<promoted-attribute name="Logical Network.node_1.Src.Packet rate" value="0.0"/>
-				<promoted-attribute name="Logical Network.*.P2P.Timeout value" value="5"/>
+				<promoted-attribute name="Logical Network.*.Src.High priority fraction" value="0.1 TO 0.9 BY 0.2"/>
+				<promoted-attribute name="Logical Network.*.P2P.Timeout value" value="3.0"/>
+				<promoted-attribute name="Logical Network.*.Src.Packet rate" value="0.1 TO 0.5 BY 0.1"/>
+				<promoted-attribute name="Logical Network.node_0 &lt;-&gt; node_1.ber" value="0"/>
 			</promoted-attribute-list>
 			<attr-info-list>
 				<attr-info name="Logical Network.*.Src.High priority fraction" type="double">
@@ -36,15 +36,39 @@
 				<attr-info name="Logical Network.*.P2P.Timeout value" type="double">
 					<value value="0.0"/>
 				</attr-info>
-				<attr-info name="Logical Network.node_0.Src.Packet rate" type="double">
+				<attr-info name="Logical Network.*.Src.Packet rate" type="double">
 					<value value="0.0"/>
 				</attr-info>
-				<attr-info name="Logical Network.node_1.Src.Packet rate" type="double">
+				<attr-info name="Logical Network.node_0 &lt;-&gt; node_1.ber" type="double">
 					<value value="0.0"/>
 				</attr-info>
 			</attr-info-list>
 			<selected-run-list>
 				<selected-run id="0"/>
+				<selected-run id="1"/>
+				<selected-run id="2"/>
+				<selected-run id="3"/>
+				<selected-run id="4"/>
+				<selected-run id="5"/>
+				<selected-run id="6"/>
+				<selected-run id="7"/>
+				<selected-run id="8"/>
+				<selected-run id="9"/>
+				<selected-run id="10"/>
+				<selected-run id="11"/>
+				<selected-run id="12"/>
+				<selected-run id="13"/>
+				<selected-run id="14"/>
+				<selected-run id="15"/>
+				<selected-run id="16"/>
+				<selected-run id="17"/>
+				<selected-run id="18"/>
+				<selected-run id="19"/>
+				<selected-run id="20"/>
+				<selected-run id="21"/>
+				<selected-run id="22"/>
+				<selected-run id="23"/>
+				<selected-run id="24"/>
 			</selected-run-list>
 			<traffic-trend count="1" units="month" time-gap="1.0" storage-method="each-simulation" import-options="nothing" method="regular-simple" growth-rate="10"/>
 		</simset>
