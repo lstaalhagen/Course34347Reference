@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<simulation-sequence base-id="1">
+	<OPNET-info OPNET-release="18.7.1" OPNET-patchlevel="0" OPNET-model-data-version="17.5.B"/>
+	<simset-list>
+		<simset id="0" anim-enabled="no">
+			<simset-attributes>
+				<attribute name="name" type="string" value="scenario"/>
+				<attribute name="network" type="typed file" spectype="4" value="Assignment3-scenario1"/>
+				<attribute name="probe file" type="typed file" spectype="27" value="Assignment3-scenario1"/>
+				<attribute name="vector file" type="string" spectype="29" value="Assignment3-scenario1"/>
+				<attribute name="environment files" type="textlist"/>
+				<attribute name="anim hist" type="string" spectype="40" value="Assignment3-scenario1"/>
+				<attribute name="SLA probe files" type="textlist"/>
+				<attribute name="Report probe files" type="textlist"/>
+				<attribute name="number sim processors" type="integer" value="1"/>
+				<attribute name="mem tag generate list" type="textlist"/>
+				<attribute name="packet sharing" type="enumerated" value="conservative"/>
+				<attribute name="display prefs" type="enumerated" value=""/>
+				<attribute name="comments" type="textlist"/>
+				<attribute name="generate packet info report" type="toggle" value="1"/>
+				<attribute name="checkpoint keep_last_N" type="integer" value="-1"/>
+			</simset-attributes>
+			<promoted-attribute-list>
+				<promoted-attribute name="Logical Network.*.Src.High priority fraction" value="0.5"/>
+				<promoted-attribute name="Logical Network.node_0.Src.Packet rate" value="0.33333"/>
+				<promoted-attribute name="Logical Network.node_1.Src.Packet rate" value="0.0"/>
+				<promoted-attribute name="Logical Network.*.P2P.Timeout value" value="5"/>
+			</promoted-attribute-list>
+			<attr-info-list>
+				<attr-info name="Logical Network.*.Src.High priority fraction" type="double">
+					<value value="0.0"/>
+				</attr-info>
+				<attr-info name="Logical Network.*.P2P.TimeoutValue" type="double">
+					<value value="0.0"/>
+				</attr-info>
+				<attr-info name="Logical Network.*.P2P.Timeout value" type="double">
+					<value value="0.0"/>
+				</attr-info>
+				<attr-info name="Logical Network.node_0.Src.Packet rate" type="double">
+					<value value="0.0"/>
+				</attr-info>
+				<attr-info name="Logical Network.node_1.Src.Packet rate" type="double">
+					<value value="0.0"/>
+				</attr-info>
+			</attr-info-list>
+			<selected-run-list>
+				<selected-run id="0"/>
+			</selected-run-list>
+			<traffic-trend count="1" units="month" time-gap="1.0" storage-method="each-simulation" import-options="nothing" method="regular-simple" growth-rate="10"/>
+		</simset>
+	</simset-list>
+</simulation-sequence>
